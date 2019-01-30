@@ -39,16 +39,16 @@ run_tests(arr_identity, arr_identity_tests, false);
 
 // strings
 var full_thing_tests = [
-    {name: 'asdf', args:['asdf'], expected: 'adfs'},
-    {name: 'aA', args:['aA'], expected: 'Aa'},
-    {name: 'Aa', args:['Aa'], expected: 'Aa'},
+    {name: 'aasddf', args:['aasddf'], expected: 'adfs'},
+    {name: 'aaAa', args:['aaAa'], expected: 'Aa'},
+    {name: 'AAaA', args:['AAaA'], expected: 'Aa'},
   ];
 function full_thing(str) {
-  return debed(sort(embed(str)));
+  return debed(uniquify(sort(embed(str))));
 };
 // in-place documentation
 console.groupCollapsed('%c full_thing( string ) -> string', 'font-weight:bold');
-console.log('takes in a string and returns the letters sorted by charcode');
+console.log('takes in a string and returns the unique charecters sorted by charcode');
 console.log(full_thing.toString());
 console.log(full_thing_tests);
 console.groupEnd();

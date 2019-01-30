@@ -4,8 +4,9 @@ function handler() {                                        var new_entry = {};
 
   // pass user input through core logic
   var embedded = embed(input);                              new_entry['2. embedded'] = embedded;
-  var result = sort(embedded);                              new_entry['3. result'] = result;
-  var debedded = debed(result);                             new_entry['4. debedded'] = debedded;
+  var sorted = sort(embedded);                              new_entry['3. sorted'] = sorted;
+  var result = uniquify(sorted);                            new_entry['4. result'] = result;
+  var debedded = debed(result);                             new_entry['5. debedded'] = debedded;
 
   // write final computation to user
   var output = document.getElementById('output');           log.push(new_entry);
