@@ -6,10 +6,32 @@
 <script src='5-debed.js'></script>
 <script src='6-compositions.js'></script>
 <script src='7-log.js'></script>
-<script src='8-handler.js'></script>
+<script src='8-display-result.js'></script>
+<script src='9-guess-it.js'></script>
 
-word: <input id='input' value=''></input> <br>
-<button onclick='handler()'>list charecters</button> <br>
+<h3>Charecterize</h3>
+
+<p>
+  The point of this game is to try guessing which characters are in a sentence. <br>
+  Type anything you want into the 'input' field. <br> 
+  In the 'guess' field type what characters you think this sentence contains without duplication, in charcode order. (spaces and punctuation count) <br>
+  <br>
+  a couple examples: <br>
+  - "trolly problem"  -->  " belmoprty" <br>
+  - "colon: semi;""    --> " :;ceilmnos"
+
+</p>
+
+<br><br>
+
+input: <input id='input' value=''></input> <br>
+<button onclick='display_result()'>cheat</button> <br>
+<p id='cheated'></p><br>
+
+
+guess: <input id='guess' value=''></input> <br>
+<button onclick='guess_it()'>play</button> <br><br>
+
 <p id='output'></p>
 
 

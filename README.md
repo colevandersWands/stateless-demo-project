@@ -1,8 +1,8 @@
 ## [Stateless Demo Project](https://janke-learning.github.io/stateless-demo-project)
 
-Building a project like this is a realistic demonstration of computational literacy after a first year of study.  None of the individual functions are overly challenging while the entirety of the project requires a meaningful mastery of organized development, applied computation, inspecting & debugging, and documentation.
+Building a project like this is a realistic demonstration of computational literacy after a first year of study.  None of the individual functions are overly challenging while the entirety of the project requires a meaningful mastery of organized development, applied computation, inspecting & debugging, documentation, and attention to a (almost) fun user experience.
 
-Besides the direct learning objectives of this project, students are gaining experience working in the open-source environment, using professional tools at a manageable level, and can immediately share their projects by url.
+Besides the direct learning objectives of this project, students are gaining experience working in the open-source environment, using professional tools at a manageable level, and can immediately share their projects online.
 
 ___
 ___

@@ -1,4 +1,4 @@
-function handler() {                                        var new_entry = {};
+function display_result() {                                 var new_entry = {};
   // read and process user input
   var input = document.getElementById('input').value;       new_entry['1. input'] = input;
 
@@ -9,12 +9,12 @@ function handler() {                                        var new_entry = {};
   var debedded = debed(result);                             new_entry['5. debedded'] = debedded;
 
   // write final computation to user
-  var output = document.getElementById('output');           log.push(new_entry);
+  var output = document.getElementById('cheated');           log.push(new_entry);
   output.innerHTML = debedded;
 };
 
 // in-place documentation
-console.groupCollapsed('%c handler() -> (handles user actions)', 'font-weight:bold');
+console.groupCollapsed('%c disply_result() -> (displays result to dom)', 'font-weight:bold');
 console.log('reads user input from dom, passes it through core logic, writes result to dom');
-console.log(handler.toString());
+console.log(display_result.toString());
 console.groupEnd();
