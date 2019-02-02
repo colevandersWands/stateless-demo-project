@@ -23,9 +23,9 @@ function run_tests(_target, _cases, _log) {
       args = JSON.parse(JSON.stringify(t_case.args));
       const report = _target(...args, true);
       console.groupCollapsed(`%c  ${t_case.name}: \n`, 'color:orange');
-      console.assert(false, report.log);
       console.log(`%cactual: ${typeof report.result},`, 'color:red', report.result);
       console.log(`%cexpected: ${typeof expected},`, 'color:green', expected);
+      console.assert(false, report.log);
       console.groupEnd();
     } else if (!pass) {
       console.groupCollapsed(`%c  ${t_case.name}: \n`, 'color:orange');
