@@ -2,6 +2,10 @@ function display_result() {                                 var new_entry = {};
   // read and process user input
   var input = document.getElementById('input').value;       new_entry['1. input'] = input;
 
+  if (input.length < 2) {
+    throw new Error('invalid input: must be at least 2 chars');
+  };
+
   // pass user input through core logic
   var embedded = embed(input);                              new_entry['2. embedded'] = embedded;
   var sorted = sort(embedded);                              new_entry['3. sorted'] = sorted;

@@ -3,6 +3,15 @@ function guess_it() {                                        var new_entry = {};
   var arg = document.getElementById('input').value;         new_entry['1. arg'] = arg;
   var expected = document.getElementById('guess').value;    new_entry['2. expected'] = expected;
 
+  if (arg.length < 2) {
+    throw new Error('invalid input: must be at least 2 chars');
+  };
+
+  if (expected.length < 1) {
+    throw new Error('invalid guess: must be at least 1 char');
+  };
+
+
   // pass user input through core logic
   var actual = debed(uniquify(sort(embed(arg))));           new_entry['3. actual'] = actual;
   var correct = expected === actual;                        new_entry['4: correct'] = correct;
